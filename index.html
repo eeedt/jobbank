@@ -51,7 +51,7 @@
     <div class="mb-3 mt-3">
         <label class="form-label">Gender<span style="color:red">*</span></label>&nbsp;&nbsp;
         <input type="radio" class="form-check-input" id="gender1" name="genderRad" value="1">&nbsp; Male &nbsp;&nbsp;
-		    <input type="radio" class="form-check-input" id="gender2" name="genderRad" value="2">&nbsp; Female &nbsp;&nbsp;
+        <input type="radio" class="form-check-input" id="gender2" name="genderRad" value="2">&nbsp; Female &nbsp;&nbsp;
         <input type="radio" class="form-check-input" id="gender3" name="genderRad" value="3">&nbsp; Other
     </div>
     <div class="mb-3 mt-3">
@@ -77,10 +77,37 @@
         <span style="color:red">*</span></label>
         <input type="text" class="form-control" id="workDays" name="workDays"/>
     </div>
-	
+  
     <button type="submit" class="btn btn-primary">Register</button>
     <button type="reset" class="btn btn-primary">Reset</button>
 </form><br><br>
+
+<div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="promoModalLabel">งานสัมมนาน่าสนใจ ลงทะเบียนด่วน!!!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="seminar.jpg.jpg" class="img-fluid" alt="Data Analytics Seminar">
+        <p class="mt-3"><strong>Data Analytics for MarTech</strong><br>ถอดรหัสข้อมูล สู่เทคโนโลยีการตลาดยุคใหม่</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
+
+</div>
+
+<script>
+  window.onload = function() {
+    var myModal = new bootstrap.Modal(document.getElementById('promoModal'));
+    myModal.show();
+  };
+</script>
+
 </body>
 </html>
